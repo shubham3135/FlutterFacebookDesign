@@ -1,10 +1,9 @@
-import 'package:device_preview/device_preview.dart';
 import 'package:facebook_design/config/palette.dart';
 import 'package:facebook_design/screens/nav_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(DevicePreview(builder: (context) => MyApp()));
+  runApp(/*DevicePreview(builder: (context) => */ MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      builder: DevicePreview.appBuilder,
+      // builder: DevicePreview.appBuilder,
       title: 'Facebook',
       theme: ThemeData(
         primarySwatch: Colors.blue,
